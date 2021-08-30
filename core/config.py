@@ -30,7 +30,7 @@ net_arg.add_argument("--run_mode", type=str, default="test",
                      help='run_mode')
 net_arg.add_argument('--input_dim', type=int, default=4096,
                      help='the dimension of the input features')
-net_arg.add_argument('--output_dim', type=int, default=32,
+net_arg.add_argument('--output_dim', type=int, default=64,
                      help='the dimension of the learned local descriptor')
 net_arg.add_argument('--log_path', type=str, default='./logs',
                      help='path to the directory with the tensorboard logs')
@@ -82,7 +82,7 @@ train_arg.add_argument('--shuffle_size_TFRecords', type=int, default=5000,
                        help='the shuffle buffer size of the TFRecords')
 train_arg.add_argument('--training_data_folder', type=str, default="./data/train/trainingData3DMatch",
                        help='location of the training data files')
-train_arg.add_argument('--pretrained_model', type=str, default="./models/32_dim/3DSmoothNet_32_dim.ckpt",
+train_arg.add_argument('--pretrained_model', type=str, default="./models/64_dim/3DSmoothNet_64_dim.ckpt",
                        help='pretrained model which will be used if resume is activared')
 
 # Validation

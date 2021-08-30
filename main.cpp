@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
     if (!result)
         return 1;
 
+    radius = radius*4;
     // Check if the output folder exists, otherwise create it
     boost::filesystem::path dir(output_folder);
     if (boost::filesystem::create_directory(dir))
